@@ -4,6 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  */
+$tRoot = get_bloginfo('template_directory');
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

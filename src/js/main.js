@@ -116,7 +116,7 @@ $(document).ready( function() {
 		var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 		return re.test(email);
 	}
-	if ( $(".newsletter").length() > 0 ) {
+	if ( $(".newsletter").length > 0 ) {
 		$(".newsletter input[type='text']").keyup( function() {
 			if ( $(this).val() == "" ) {
 				$(".newsletter").removeClass("invalid");
@@ -135,7 +135,7 @@ $(document).ready( function() {
 
 ////////////////////////////////////////////////
 /// Activate tabs
-	if ( $(".tabs").length() > 0 ) {
+	if ( $(".tabs").length > 0 ) {
 		$('.tabs').tab();
 
 		$( function() {
@@ -160,7 +160,7 @@ $(document).ready( function() {
 			window.location.hash = hash;
 		});
 	}
-	if ( $(".hashAnchor").length() > 0 ) {
+	if ( $(".hashAnchor").length > 0 ) {
 		$(".hashAnchor").on('click', function(e) {
 			e.preventDefault();
 			var hash = this.hash;

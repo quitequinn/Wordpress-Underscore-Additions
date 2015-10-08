@@ -6,6 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
+$tRoot = get_bloginfo('template_directory');
 
 ?>
 
