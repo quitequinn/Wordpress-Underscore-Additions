@@ -1,0 +1,91 @@
+
+/**
+ * Highlighting colors
+//  */
+// ::selection {
+// 	color: $color-white;
+// 	background: $color-primary;
+// }
+
+body, html{
+
+}
+
+::-moz-selection { 
+	background: $brand-primary; 
+}
+::selection { 
+	background: $brand-primary; 
+}
+
+a, a:hover, a:visited, a:focus, a:active{
+	text-decoration: none;	
+	color: $brand-primary; 
+}
+
+h1, .h1{
+	$size: 60px;
+	font-size: $size;
+	@include m(min,$sm) {
+		font-size: $size*1.25;
+	}
+	@include m(min,$md) {
+		font-size: $size*1.5;
+	}
+	@include m(min,$lg) {
+		font-size: $size*1.75;
+	}
+	@include m(min,$xl) {
+		font-size: $size*2;
+	}
+}
+h2, .h2{
+	$size: 20px;
+	font-size: $size;
+	@include m(min,$sm) {
+		font-size: $size*1.25;
+	}
+	@include m(min,$md) {
+		font-size: $size*1.5;
+	}
+	@include m(min,$lg) {
+		font-size: $size*1.75;
+	}
+	@include m(min,$xl) {
+		font-size: $size*2;
+	}
+}
+h3, .h3{
+	$size: 40px;
+	font-size: $size;
+	@include m(min,$sm) {
+		font-size: $size*1.25;
+	}
+	@include m(min,$md) {
+		font-size: $size*1.4;
+	}
+	@include m(min,$lg) {
+		font-size: $size*1.7;
+	}
+	@include m(min,$xl) {
+		font-size: $size*1.8;
+	}
+}
+
+h6, .h6{
+    font-size: 15px;
+	text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+p{
+    max-width: 650px;
+}
+
+#page{
+	overflow: hidden;
+}
+
+footer{
+
+}
